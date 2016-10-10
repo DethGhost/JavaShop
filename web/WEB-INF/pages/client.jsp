@@ -8,7 +8,8 @@
 
 </div>
 <form method="get" action="/client.html">
-    <button type="submit">Show Clients</button>
+   <a href="/showClients.html"> <button>Show Clients</button></a>
 </form>
+
 </body>
 </html>
