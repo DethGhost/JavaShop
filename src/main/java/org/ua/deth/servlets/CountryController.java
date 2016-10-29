@@ -11,7 +11,6 @@ import org.ua.deth.dao.service.CountryService;
 import org.ua.deth.entitys.Country;
 
 import javax.servlet.http.HttpSession;
-import java.util.Map;
 
 @Controller
 
@@ -35,7 +34,7 @@ public class CountryController {
 
     //try to add Spring form:tag
     @RequestMapping(value = "addCountry", method = RequestMethod.POST)
-    public String addCountry(@ModelAttribute("countryForm") Country country, Map<String, Object> stringObjectMap, HttpSession session) {
+    public String addCountry(@ModelAttribute("countryForm") Country country, HttpSession session) {
         countryService.createCountry(country);
         session.setAttribute("countries", countryService.showCountries());
         return "redirect:country.html";
@@ -54,6 +53,31 @@ public class CountryController {
     public ModelAndView showCountries(HttpSession session) {
         ModelAndView modelAndView = new ModelAndView();
         session.setAttribute("showCountries", countryService.showCountries());
+        modelAndView.setViewName("redirect:country.html");
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "editCountry", method = RequestMethod.POST)
+    public ModelAndView editCountry(@RequestParam("countryId") String countryId, HttpSession session) {
+        ModelAndView modelAndView = new ModelAndView();
+        session.setAttribute("editedCountry", countryService.showById(Long.parseLong(countryId)));
+        modelAndView.setViewName("redirect:edit_country.html");
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "edit_country.html", method = RequestMethod.GET)
+    public ModelAndView getEditCountryPage(ModelAndView modelAndView, HttpSession session) {
+        modelAndView.setViewName("editCountry");
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "doEditCountry", method = RequestMethod.POST)
+    public ModelAndView doEditCountry(HttpSession session, @RequestParam("name") String name) {
+        ModelAndView modelAndView = new ModelAndView();
+        session.setAttribute("showCountries", countryService.showCountries());
+        Country country = (Country) session.getAttribute("editedCountry");
+        country.setName(name);
+        countryService.updateCountry(country);
         modelAndView.setViewName("redirect:country.html");
         return modelAndView;
     }

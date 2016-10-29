@@ -29,6 +29,18 @@
 </form>
 </p>
 <p>
+    <br/>
+<h1>Edit Country</h1>
+<form action="/editCountry" method="post">
+    <select name="countryId">
+        <c:forEach items="${countries}" var="country">
+            <option value="${country.countryId}">${country}</option>
+        </c:forEach>
+    </select>
+    <button>EDIT selected</button>
+</form>
+</p>
+<p>
 <h1>Countries</h1><br/>
 <form action="showCountries" method="get">
     <button>Show Countries</button>

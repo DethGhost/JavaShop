@@ -9,24 +9,17 @@
 <div id="showClients">
 
 </div>
-<form method="post" action="/addClient">
-    <p>Name:</p>
-    <input name="fullName" type="text" placeholder="Enter your full name"/>
+<form:form modelAttribute="clientF" method="post" action="/addClient">
     <p>Email:</p>
-    <input type="email" name="email" placeholder="Email"/>
+    <form:input type="email" path="email" placeholder="Email"/>
+    <p>Name:</p>
+    <form:input path="fullName" placeholder="Enter your full name"/>
+
     <p>Password:</p>
-    <input name="password" type="password"/>
-    <p>Phone:</p>
-    <input type="text" name="phone" placeholder="+380XXNNNNNNN"/>
-    <p>Address:</p>
-    <select name="curCountry">
-        <option>--------SELECT COUNTRY---------</option>
-        <c:forEach items="${countries}" var="country">
-            <option value="${country.countryId}">${country}</option>
-        </c:forEach>
-    </select>
-    <button>Submit</button>
-</form>
+    <form:input path="password" type="password" placeholder="Enter password"/>
+
+    <input type="submit" value="Ok"/>
+</form:form>
 <p>
 
 </p>
