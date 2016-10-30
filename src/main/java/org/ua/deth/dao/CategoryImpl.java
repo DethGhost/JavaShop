@@ -1,4 +1,4 @@
-package org.ua.deth.dao.factory;
+package org.ua.deth.dao;
 
 import org.springframework.stereotype.Repository;
 import org.ua.deth.dao.interfaces.CategoryDao;

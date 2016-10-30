@@ -1,4 +1,4 @@
-package org.ua.deth.servlets;
+package org.ua.deth.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -7,13 +7,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
-import org.ua.deth.dao.service.AddressService;
-import org.ua.deth.dao.service.ClientService;
-import org.ua.deth.dao.service.CountryService;
-import org.ua.deth.dao.service.PhoneService;
 import org.ua.deth.entitys.Address;
 import org.ua.deth.entitys.Client;
 import org.ua.deth.entitys.Phone;
+import org.ua.deth.service.AddressService;
+import org.ua.deth.service.ClientService;
+import org.ua.deth.service.CountryService;
+import org.ua.deth.service.PhoneService;
 
 import javax.servlet.http.HttpSession;
 

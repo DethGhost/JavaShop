@@ -1,8 +1,8 @@
-package org.ua.deth.dao.service;
+package org.ua.deth.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.ua.deth.dao.factory.CountryImpl;
+import org.ua.deth.dao.CountryImpl;
 import org.ua.deth.dao.interfaces.CountryDao;
 import org.ua.deth.entitys.Country;
 

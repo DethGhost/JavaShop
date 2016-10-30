@@ -1,8 +1,8 @@
-package org.ua.deth.dao.service;
+package org.ua.deth.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.ua.deth.dao.factory.PhoneImpl;
+import org.ua.deth.dao.PhoneImpl;
 import org.ua.deth.dao.interfaces.PhoneDao;
 import org.ua.deth.entitys.Client;
 import org.ua.deth.entitys.Phone;

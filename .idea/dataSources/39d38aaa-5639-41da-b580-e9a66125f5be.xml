@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="JavaShop/Hibernate">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="2.6">
+    <database id="1" name="HotNews">
+      <object-id>16393</object-id>
+      <visible>1</visible>
+    </database>
+    <database id="2" name="java_shop">
+      <object-id>66130</object-id>
+      <visible>1</visible>
+    </database>
+    <database id="3" name="postgres">
+      <object-id>12029</object-id>
+    </database>
+    <database id="4" name="somes">
+      <object-id>16422</object-id>
+    </database>
+    <database id="5" name="shop">
+      <object-id>24576</object-id>
+    </database>
+    <database id="6" name="book_store">
+      <object-id>41106</object-id>
+    </database>
+    <database id="7" name="coffe_shop">
+      <object-id>41552</object-id>
+    </database>
+    <database id="8" name="aaaaaaa">
+      <object-id>41553</object-id>
+    </database>
+    <database id="9" name="registration">
+      <object-id>57936</object-id>
+    </database>
+    <database id="10" name="hibernate_test">
+      <object-id>66376</object-id>
+    </database>
+    <database id="11" name="chat_db">
+      <object-id>74320</object-id>
+    </database>
+    <schema id="12" parent="1" name="public">
+      <object-id>2200</object-id>
+      <visible>1</visible>
+      <introspection-timestamp>2016-10-29.15:48:35.228</introspection-timestamp>
+    </schema>
+    <schema id="13" parent="1" name="pg_catalog">
+      <object-id>11</object-id>
+    </schema>
+    <schema id="14" parent="1" name="pg_toast">
+      <object-id>99</object-id>
+    </schema>
+    <schema id="15" parent="1" name="pg_temp_1">
+      <object-id>11848</object-id>
+    </schema>
+    <schema id="16" parent="1" name="pg_toast_temp_1">
+      <object-id>11849</object-id>
+    </schema>
+    <schema id="17" parent="1" name="information_schema">
+      <object-id>12113</object-id>
+    </schema>
+    <schema id="18" parent="2" name="public">
+      <object-id>2200</object-id>
+      <visible>1</visible>
+      <introspection-state-number>1252</introspection-state-number>
+      <introspection-timestamp>2016-10-29.16:22:42.327</introspection-timestamp>
+    </schema>
+    <schema id="19" parent="2" name="pg_catalog">
+      <object-id>11</object-id>
+    </schema>
+    <schema id="20" parent="2" name="pg_toast">
+      <object-id>99</object-id>
+    </schema>
+    <schema id="21" parent="2" name="pg_temp_1">
+      <object-id>11215</object-id>
+    </schema>
+    <schema id="22" parent="2" name="pg_toast_temp_1">
+      <object-id>11216</object-id>
+    </schema>
+    <schema id="23" parent="2" name="information_schema">
+      <object-id>11480</object-id>
+    </schema>
+    <sequence id="24" parent="18" name="address_id_seq">
+      <object-id>66244</object-id>
+      <state-number>1219</state-number>
+    </sequence>
+    <sequence id="25" parent="18" name="cart_id_seq">
+      <object-id>66246</object-id>
+      <state-number>1220</state-number>
+    </sequence>
+    <sequence id="26" parent="18" name="category_id_seq">
+      <object-id>66248</object-id>
+      <state-number>1221</state-number>
+    </sequence>
+    <sequence id="27" parent="18" name="client_id_seq">
+      <object-id>66250</object-id>
+      <state-number>1222</state-number>
+    </sequence>
+    <sequence id="28" parent="18" name="country_id_seq">
+      <object-id>66252</object-id>
+      <state-number>1223</state-number>
+    </sequence>
+    <sequence id="29" parent="18" name="manufacturer_id_seq">
+      <object-id>66254</object-id>
+      <state-number>1224</state-number>
+    </sequence>
+    <sequence id="30" parent="18" name="option_id_seq">
+      <object-id>66256</object-id>
+      <state-number>1225</state-number>
+    </sequence>
+    <sequence id="31" parent="18" name="order_id_seq">
+      <object-id>66258</object-id>
+      <state-number>1226</state-number>
+    </sequence>
+    <sequence id="32" parent="18" name="phone_id_seq">
+      <object-id>66260</object-id>
+      <state-number>1227</state-number>
+    </sequence>
+    <sequence id="33" parent="18" name="product_id_seq">
+      <object-id>66262</object-id>
+      <state-number>1228</state-number>
+    </sequence>
+    <sequence id="34" parent="18" name="sub_category_id_seq">
+      <object-id>66264</object-id>
+      <state-number>1229</state-number>
+    </sequence>
+    <sequence id="35" parent="18" name="user_group_id_seq">
+      <object-id>66266</object-id>
+      <state-number>1230</state-number>
+    </sequence>
+    <sequence id="36" parent="18" name="user_id_seq">
+      <object-id>66268</object-id>
+      <state-number>1231</state-number>
+    </sequence>
+    <table id="37" parent="18" name="address">
+      <object-id>66131</object-id>
+      <state-number>1238</state-number>
+    </table>
+    <table id="38" parent="18" name="cart">
+      <object-id>66136</object-id>
+      <state-number>1235</state-number>
+    </table>
+    <table id="39" parent="18" name="cart_product">
+      <object-id>66141</object-id>
+      <state-number>1235</state-number>
+    </table>
+    <table id="40" parent="18" name="category">
+      <object-id>66144</object-id>
+      <state-number>1251</state-number>
+    </table>
+    <table id="41" parent="18" name="category_product">
+      <object-id>66152</object-id>
+      <state-number>1237</state-number>
+    </table>
+    <table id="42" parent="18" name="client">
+      <object-id>66155</object-id>
+      <state-number>1244</state-number>
+    </table>
+    <table id="43" parent="18" name="country">
+      <object-id>66163</object-id>
+      <state-number>1232</state-number>
+    </table>
+    <table id="44" parent="18" name="manufacturer">
+      <object-id>66168</object-id>
+      <state-number>1245</state-number>
+    </table>
+    <table id="45" parent="18" name="option">
+      <object-id>66176</object-id>
+      <state-number>1249</state-number>
+    </table>
+    <table id="46" parent="18" name="option_product">
+      <object-id>66184</object-id>
+      <state-number>1240</state-number>
+    </table>
+    <table id="47" parent="18" name="orders">
+      <object-id>66187</object-id>
+      <state-number>1243</state-number>
+    </table>
+    <table id="48" parent="18" name="orders_product">
+      <object-id>66195</object-id>
+      <state-number>1243</state-number>
+    </table>
+    <table id="49" parent="18" name="phone">
+      <object-id>66198</object-id>
+      <state-number>1244</state-number>
+    </table>
+    <table id="50" parent="18" name="product">
+      <object-id>66203</object-id>
+      <state-number>1250</state-number>
+    </table>
+    <table id="51" parent="18" name="product_category">
+      <object-id>66211</object-id>
+      <state-number>1248</state-number>
+    </table>
+    <table id="52" parent="18" name="product_option">
+      <object-id>66214</object-id>
+      <state-number>1250</state-number>
+    </table>
+    <table id="53" parent="18" name="sub_category">
+      <object-id>66217</object-id>
+      <state-number>1251</state-number>
+    </table>
+    <table id="54" parent="18" name="user_group">
+      <object-id>66225</object-id>
+      <state-number>1252</state-number>
+    </table>
+    <table id="55" parent="18" name="users">
+      <object-id>66230</object-id>
+      <state-number>1252</state-number>
+    </table>
+    <column id="56" parent="37" name="address_id">
+      <state-number>1197</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <column id="57" parent="37" name="address">
+      <state-number>1197</state-number>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="58" parent="37" name="city">
+      <state-number>1197</state-number>
+      <data-type>varchar(25)|0</data-type>
+    </column>
+    <column id="59" parent="37" name="postcode">
+      <state-number>1197</state-number>
+      <data-type>varchar(10)|0</data-type>
+    </column>
+    <column id="60" parent="37" name="country_id">
+      <state-number>1197</state-number>
+      <data-type>bigint|0</data-type>
+    </column>
+    <index id="61" parent="37" name="address_pkey">
+      <object-id>66134</object-id>
+      <columns>address_id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="62" parent="37" name="address_pkey">
+      <object-id>66135</object-id>
+      <columns>address_id</columns>
+      <underlying-index>address_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="63" parent="37" name="fkpr4rl83u5fv832kdihl6w3kii">
+      <object-id>66270</object-id>
+      <columns>country_id</columns>
+      <ref-key>~.country.country_pkey</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="64" parent="38" name="cart_id">
+      <state-number>1198</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <column id="65" parent="38" name="date_added">
+      <state-number>1198</state-number>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="66" parent="38" name="quantity">
+      <state-number>1198</state-number>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="67" parent="38" name="fk_client_id">
+      <state-number>1198</state-number>
+      <data-type>bigint|0</data-type>
+    </column>
+    <index id="68" parent="38" name="cart_pkey">
+      <object-id>66139</object-id>
+      <columns>cart_id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="69" parent="38" name="cart_pkey">
+      <object-id>66140</object-id>
+      <columns>cart_id</columns>
+      <underlying-index>cart_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="70" parent="38" name="fk6jwv23d8pvw5t2wx3m1xwj2ul">
+      <object-id>66275</object-id>
+      <columns>fk_client_id</columns>
+      <ref-key>~.client.client_pkey</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="71" parent="39" name="cart_cart_id">
+      <state-number>1199</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <column id="72" parent="39" name="productlist_product_id">
+      <state-number>1199</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <index id="73" parent="39" name="uk_jj4pewa09i8exylqaqrttdvp2">
+      <object-id>66238</object-id>
+      <columns>productlist_product_id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="74" parent="39" name="uk_jj4pewa09i8exylqaqrttdvp2">
+      <object-id>66239</object-id>
+      <columns>productlist_product_id</columns>
+      <underlying-index>uk_jj4pewa09i8exylqaqrttdvp2</underlying-index>
+    </key>
+    <foreign-key id="75" parent="39" name="fk82rqrvrkcvcswcc3xettb8siu">
+      <object-id>66285</object-id>
+      <columns>cart_cart_id</columns>
+      <ref-key>~.cart.cart_pkey</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="76" parent="39" name="fkm9stmgrf6685uo66qkgbapap2">
+      <object-id>66280</object-id>
+      <columns>productlist_product_id</columns>
+      <ref-key>~.product.product_pkey</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="77" parent="40" name="category_id">
+      <state-number>1200</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <column id="78" parent="40" name="description">
+      <state-number>1200</state-number>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="79" parent="40" name="image_url">
+      <state-number>1200</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="80" parent="40" name="keywords">
+      <state-number>1200</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="81" parent="40" name="name">
+      <state-number>1200</state-number>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <index id="82" parent="40" name="category_pkey">
+      <object-id>66150</object-id>
+      <columns>category_id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="83" parent="40" name="category_pkey">
+      <object-id>66151</object-id>
+      <columns>category_id</columns>
+      <underlying-index>category_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="84" parent="41" name="category_category_id">
+      <state-number>1201</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <column id="85" parent="41" name="productlist_product_id">
+      <state-number>1201</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <foreign-key id="86" parent="41" name="fkhafnj3ahfer9sj60rdk1cdnl0">
+      <object-id>66295</object-id>
+      <columns>category_category_id</columns>
+      <ref-key>~.category.category_pkey</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="87" parent="41" name="fkdr8d1xgdu1cw2tael3xxf6cy9">
+      <object-id>66290</object-id>
+      <columns>productlist_product_id</columns>
+      <ref-key>~.product.product_pkey</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="88" parent="42" name="client_id">
+      <state-number>1202</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <column id="89" parent="42" name="email">
+      <state-number>1202</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="90" parent="42" name="full_name">
+      <state-number>1202</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="91" parent="42" name="password">
+      <state-number>1202</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="92" parent="42" name="fk_address_id">
+      <state-number>1202</state-number>
+      <data-type>bigint|0</data-type>
+    </column>
+    <index id="93" parent="42" name="client_pkey">
+      <object-id>66161</object-id>
+      <columns>client_id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="94" parent="42" name="uk_f07ymtqaif0tbcawyb71l3one">
+      <object-id>66240</object-id>
+      <columns>email</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="95" parent="42" name="client_pkey">
+      <object-id>66162</object-id>
+      <columns>client_id</columns>
+      <underlying-index>client_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <key id="96" parent="42" name="uk_f07ymtqaif0tbcawyb71l3one">
+      <object-id>66241</object-id>
+      <columns>email</columns>
+      <underlying-index>uk_f07ymtqaif0tbcawyb71l3one</underlying-index>
+    </key>
+    <foreign-key id="97" parent="42" name="fk213lc18dnusvvenj7s068lyvo">
+      <object-id>66300</object-id>
+      <columns>fk_address_id</columns>
+      <ref-key>~.address.address_pkey</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="98" parent="43" name="country_id">
+      <state-number>1203</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <column id="99" parent="43" name="name">
+      <state-number>1203</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="100" parent="43" name="country_pkey">
+      <object-id>66166</object-id>
+      <columns>country_id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="101" parent="43" name="uk_t81fgsgaq5hcgbixtau1ptk3">
+      <object-id>66242</object-id>
+      <columns>name</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="102" parent="43" name="country_pkey">
+      <object-id>66167</object-id>
+      <columns>country_id</columns>
+      <underlying-index>country_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <key id="103" parent="43" name="uk_t81fgsgaq5hcgbixtau1ptk3">
+      <object-id>66243</object-id>
+      <columns>name</columns>
+      <underlying-index>uk_t81fgsgaq5hcgbixtau1ptk3</underlying-index>
+    </key>
+    <column id="104" parent="44" name="manufacturer_id">
+      <state-number>1204</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <column id="105" parent="44" name="logo_url">
+      <state-number>1204</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="106" parent="44" name="name">
+      <state-number>1204</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="107" parent="44" name="manufacturer_pkey">
+      <object-id>66174</object-id>
+      <columns>manufacturer_id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="108" parent="44" name="manufacturer_pkey">
+      <object-id>66175</object-id>
+      <columns>manufacturer_id</columns>
+      <underlying-index>manufacturer_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="109" parent="45" name="option_id">
+      <state-number>1205</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <column id="110" parent="45" name="name">
+      <state-number>1205</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="111" parent="45" name="option_name">
+      <state-number>1205</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="112" parent="45" name="option_value">
+      <state-number>1205</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="113" parent="45" name="option_pkey">
+      <object-id>66182</object-id>
+      <columns>option_id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="114" parent="45" name="option_pkey">
+      <object-id>66183</object-id>
+      <columns>option_id</columns>
+      <underlying-index>option_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="115" parent="46" name="option_option_id">
+      <state-number>1206</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <column id="116" parent="46" name="productlist_product_id">
+      <state-number>1206</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <foreign-key id="117" parent="46" name="fkafnlu0v1td10bt8vw508ctsy2">
+      <object-id>66310</object-id>
+      <columns>option_option_id</columns>
+      <ref-key>~.option.option_pkey</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="118" parent="46" name="fkme1r7d0u2td224a50w0y2k11x">
+      <object-id>66305</object-id>
+      <columns>productlist_product_id</columns>
+      <ref-key>~.product.product_pkey</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="119" parent="47" name="order_id">
+      <state-number>1207</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <column id="120" parent="47" name="date_order">
+      <state-number>1207</state-number>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="121" parent="47" name="full_name">
+      <state-number>1207</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="122" parent="47" name="phone">
+      <state-number>1207</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="123" parent="47" name="total">
+      <state-number>1207</state-number>
+      <data-type>double precision|0</data-type>
+    </column>
+    <column id="124" parent="47" name="fk_client_id">
+      <state-number>1207</state-number>
+      <data-type>bigint|0</data-type>
+    </column>
+    <index id="125" parent="47" name="orders_pkey">
+      <object-id>66193</object-id>
+      <columns>order_id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="126" parent="47" name="orders_pkey">
+      <object-id>66194</object-id>
+      <columns>order_id</columns>
+      <underlying-index>orders_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="127" parent="47" name="fkmdt5f15enkamiqtmedij8ki3g">
+      <object-id>66315</object-id>
+      <columns>fk_client_id</columns>
+      <ref-key>~.client.client_pkey</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="128" parent="48" name="orders_order_id">
+      <state-number>1208</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <column id="129" parent="48" name="productlist_product_id">
+      <state-number>1208</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <foreign-key id="130" parent="48" name="fkrijtehp4prq8osc3ggneq63s">
+      <object-id>66325</object-id>
+      <columns>orders_order_id</columns>
+      <ref-key>~.orders.orders_pkey</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="131" parent="48" name="fk7tqe70mdcodi1iy5slbmfsste">
+      <object-id>66320</object-id>
+      <columns>productlist_product_id</columns>
+      <ref-key>~.product.product_pkey</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="132" parent="49" name="phone_id">
+      <state-number>1209</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <column id="133" parent="49" name="phone">
+      <state-number>1209</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="134" parent="49" name="fk_client_id">
+      <state-number>1209</state-number>
+      <data-type>bigint|0</data-type>
+    </column>
+    <index id="135" parent="49" name="phone_pkey">
+      <object-id>66201</object-id>
+      <columns>phone_id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="136" parent="49" name="phone_pkey">
+      <object-id>66202</object-id>
+      <columns>phone_id</columns>
+      <underlying-index>phone_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="137" parent="49" name="fk8fnikdq3rdj6b01lst097t6re">
+      <object-id>66330</object-id>
+      <columns>fk_client_id</columns>
+      <ref-key>~.client.client_pkey</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="138" parent="50" name="product_id">
+      <state-number>1210</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <column id="139" parent="50" name="date_added">
+      <state-number>1210</state-number>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="140" parent="50" name="description">
+      <state-number>1210</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="141" parent="50" name="name">
+      <state-number>1210</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="142" parent="50" name="price">
+      <state-number>1210</state-number>
+      <data-type>double precision|0</data-type>
+    </column>
+    <column id="143" parent="50" name="quantity">
+      <state-number>1210</state-number>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="144" parent="50" name="fk_manufacturer_id">
+      <state-number>1210</state-number>
+      <data-type>bigint|0</data-type>
+    </column>
+    <column id="145" parent="50" name="fk_sub_category_id">
+      <state-number>1210</state-number>
+      <data-type>bigint|0</data-type>
+    </column>
+    <index id="146" parent="50" name="product_pkey">
+      <object-id>66209</object-id>
+      <columns>product_id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="147" parent="50" name="product_pkey">
+      <object-id>66210</object-id>
+      <columns>product_id</columns>
+      <underlying-index>product_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="148" parent="50" name="fkpgfyeg47ufcko0whlinxxm04u">
+      <object-id>66335</object-id>
+      <columns>fk_manufacturer_id</columns>
+      <ref-key>~.manufacturer.manufacturer_pkey</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="149" parent="50" name="fkmip3yj0a2sdmyxf0bqo96exfj">
+      <object-id>66340</object-id>
+      <columns>fk_sub_category_id</columns>
+      <ref-key>~.sub_category.sub_category_pkey</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="150" parent="51" name="product_product_id">
+      <state-number>1211</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <column id="151" parent="51" name="categorylist_category_id">
+      <state-number>1211</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <foreign-key id="152" parent="51" name="fko117au5kc9stf5yhh3hb82ykw">
+      <object-id>66350</object-id>
+      <columns>product_product_id</columns>
+      <ref-key>~.product.product_pkey</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="153" parent="51" name="fkhfto559h7kalgqmiwtf75bqa7">
+      <object-id>66345</object-id>
+      <columns>categorylist_category_id</columns>
+      <ref-key>~.category.category_pkey</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="154" parent="52" name="product_product_id">
+      <state-number>1212</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <column id="155" parent="52" name="optionlist_option_id">
+      <state-number>1212</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <foreign-key id="156" parent="52" name="fk1g0gnfnppl7wcou4o9r2clxw3">
+      <object-id>66360</object-id>
+      <columns>product_product_id</columns>
+      <ref-key>~.product.product_pkey</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="157" parent="52" name="fkme1tm6b7br1446fahaka5ater">
+      <object-id>66355</object-id>
+      <columns>optionlist_option_id</columns>
+      <ref-key>~.option.option_pkey</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="158" parent="53" name="sub_category_id">
+      <state-number>1213</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <column id="159" parent="53" name="description">
+      <state-number>1213</state-number>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="160" parent="53" name="image_url">
+      <state-number>1213</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="161" parent="53" name="keywords">
+      <state-number>1213</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="162" parent="53" name="name">
+      <state-number>1213</state-number>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="163" parent="53" name="fk_category_id">
+      <state-number>1213</state-number>
+      <data-type>bigint|0</data-type>
+    </column>
+    <index id="164" parent="53" name="sub_category_pkey">
+      <object-id>66223</object-id>
+      <columns>sub_category_id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="165" parent="53" name="sub_category_pkey">
+      <object-id>66224</object-id>
+      <columns>sub_category_id</columns>
+      <underlying-index>sub_category_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="166" parent="53" name="fk6fpgauxqpc482tc614hs8n0ob">
+      <object-id>66365</object-id>
+      <columns>fk_category_id</columns>
+      <ref-key>~.category.category_pkey</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="167" parent="54" name="user_group_id">
+      <state-number>1214</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <column id="168" parent="54" name="grouptype">
+      <state-number>1214</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="169" parent="54" name="user_group_pkey">
+      <object-id>66228</object-id>
+      <columns>user_group_id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="170" parent="54" name="user_group_pkey">
+      <object-id>66229</object-id>
+      <columns>user_group_id</columns>
+      <underlying-index>user_group_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="171" parent="55" name="user_id">
+      <state-number>1215</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <column id="172" parent="55" name="email">
+      <state-number>1215</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="173" parent="55" name="login">
+      <state-number>1215</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="174" parent="55" name="password">
+      <state-number>1215</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="175" parent="55" name="fk_user_group_id">
+      <state-number>1215</state-number>
+      <data-type>bigint|0</data-type>
+    </column>
+    <index id="176" parent="55" name="users_pkey">
+      <object-id>66236</object-id>
+      <columns>user_id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="177" parent="55" name="users_pkey">
+      <object-id>66237</object-id>
+      <columns>user_id</columns>
+      <underlying-index>users_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="178" parent="55" name="fk9iihykqhmcmph5gimgeemwubu">
+      <object-id>66370</object-id>
+      <columns>fk_user_group_id</columns>
+      <ref-key>~.user_group.user_group_pkey</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+  </database-model>
+</dataSource>

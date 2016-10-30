@@ -1,9 +1,9 @@
-package org.ua.deth.dao.service;
+package org.ua.deth.service;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.ua.deth.dao.factory.AddressImpl;
+import org.ua.deth.dao.AddressImpl;
 import org.ua.deth.dao.interfaces.AddressDao;
 import org.ua.deth.entitys.Address;
 
